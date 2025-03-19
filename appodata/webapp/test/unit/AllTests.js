@@ -1,5 +1,5 @@
 sap.ui.define([
-	"comsap/appodata/test/unit/controller/View1.controller"
+	"comsap/appodata/test/unit/controller/Products.controller"
 ], function () {
 	"use strict";
 });

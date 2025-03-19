@@ -90,17 +90,17 @@
             },
             "routes": [
                 {
-                    "name": "RouteView1",
+                    "name": "RouteProducts",
                     "pattern": ":?query:",
                     "target": [
-                        "TargetView1"
+                        "TargetProducts"
                     ]
                 }
             ],
             "targets": {
-                "TargetView1": {
-                    "id": "View1",
-                    "name": "View1"
+                "TargetProducts": {
+                    "id": "Products",
+                    "name": "Products"
                 }
             }
         },
