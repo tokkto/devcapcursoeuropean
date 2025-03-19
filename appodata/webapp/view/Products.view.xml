@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.sap.appodata.controller.Products"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+  <Page id="Products" title="Available Products">
+    <content>
+      <List items="{modOdata>/Products}">
+        <StandardListItem type="Active" title="{modOdata>ProductName}" />
+      </List>
+    </content>
+  </Page>
+  
+</mvc:View>
