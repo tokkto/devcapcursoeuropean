@@ -14,17 +14,21 @@
     "@cap-js/sqlite": "^1.9.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-incidents": "cds watch --open incidents/webapp/index.html?sap-ui-xx-viewCache=false"
   },
-
-  "cds": { "requires": {
-    "db": {
-       "kind": "sqlite",
-       "model": "*",
-       "credentials": { "url": "./db/sqlite/db.sqlite" } 
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": "*",
+        "credentials": {
+          "url": "./db/sqlite/db.sqlite"
+        }
+      }
     }
-  }}
-  
+  },
+  "sapux": [
+    "app/incidents"
+  ]
 }
-
-
