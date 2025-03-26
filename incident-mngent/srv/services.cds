@@ -1,5 +1,9 @@
 using { sap.capire.incidents as my } from '../db/schema';
 
+annotate ProcessorService.Incidents with @odata.draft.enabled;
+
+annotate sap.capire.incidents.Incidents with @fiori.draft.enabled;
+
 /**
  * Service used by support personell, i.e. the incidents' 'processors'.
  */
@@ -17,3 +21,5 @@ service AdminService {
     entity Customers as projection on my.Customers;
     entity Incidents as projection on my.Incidents;
     }
+
+ 

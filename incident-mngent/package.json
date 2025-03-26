@@ -21,9 +21,10 @@
     "requires": {
       "db": {
         "kind": "sqlite",
-        "model": "*",
+        "schema_evolution": "auto",
+        "model": "db/sqlite",
         "credentials": {
-          "url": "./db/sqlite/db.sqlite"
+          "url": "db/sqlite/db.sqlite"
         }
       }
     }
