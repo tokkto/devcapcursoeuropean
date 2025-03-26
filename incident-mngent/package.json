@@ -24,7 +24,7 @@
         "schema_evolution": "auto",
         "model": "db/sqlite",
         "credentials": {
-          "url": "db/sqlite/db.sqlite"
+          "url": ":memory:"
         }
       }
     }
